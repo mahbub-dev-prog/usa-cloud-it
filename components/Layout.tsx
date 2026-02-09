@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
   Menu, 
@@ -109,7 +109,9 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="block text-lg font-medium text-slate-700 dark:text-slate-200"
+              className={`block text-lg font-medium ${
+                location.pathname === link.path ? 'text-blue-600' : 'text-slate-700 dark:text-slate-200'
+              }`}
             >
               {link.name}
             </Link>
@@ -143,9 +145,9 @@ const Footer = () => {
               Empowering businesses worldwide with premium cloud infrastructure, secure hosting, and innovative IT solutions.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-blue-500 transition-colors"><Twitter size={20} /></a>
-              <a href="#" className="hover:text-blue-500 transition-colors"><Linkedin size={20} /></a>
-              <a href="#" className="hover:text-blue-500 transition-colors"><Facebook size={20} /></a>
+              <a href="https://twitter.com/usacloudit" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors"><Twitter size={20} /></a>
+              <a href="https://linkedin.com/company/usacloudit" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors"><Linkedin size={20} /></a>
+              <a href="https://facebook.com/usacloudit" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors"><Facebook size={20} /></a>
             </div>
           </div>
 
@@ -162,10 +164,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-6">Services</h4>
             <ul className="space-y-4 text-sm">
-              <li><Link to="/services" className="hover:text-white transition-colors">Shared Hosting</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">VPS Hosting</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Dedicated Servers</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">App Development</Link></li>
+              <li><Link to="/services#shared-hosting" className="hover:text-white transition-colors">Shared Hosting</Link></li>
+              <li><Link to="/services#vps-hosting" className="hover:text-white transition-colors">VPS Hosting</Link></li>
+              <li><Link to="/services#dedicated-server" className="hover:text-white transition-colors">Dedicated Servers</Link></li>
+              <li><Link to="/services#app-dev" className="hover:text-white transition-colors">App Development</Link></li>
             </ul>
           </div>
 
@@ -182,11 +184,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Send size={16} className="text-blue-500" />
-                <a href="https://t.me/usacloudit" target="_blank" className="hover:text-white">@usacloudit</a>
+                <a href="https://t.me/usacloudit" target="_blank" rel="noopener noreferrer" className="hover:text-white">@usacloudit</a>
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle size={16} className="text-blue-500" />
-                <a href="https://wa.me/8801711427975" target="_blank" className="hover:text-white">WhatsApp Chat</a>
+                <a href="https://wa.me/8801711427975" target="_blank" rel="noopener noreferrer" className="hover:text-white">WhatsApp Chat</a>
               </li>
             </ul>
           </div>

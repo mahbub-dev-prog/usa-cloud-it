@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import { Check, ArrowRight, Zap, Server, Database, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Check, ArrowRight } from 'lucide-react';
 import { PRICING_PLANS } from '../constants';
 
 export const Pricing = () => {
@@ -67,13 +68,16 @@ export const Pricing = () => {
                 ))}
               </ul>
 
-              <button className={`w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 ${
-                plan.isPopular 
-                  ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/30' 
-                  : 'bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white'
-              }`}>
+              <Link 
+                to="/client-area"
+                className={`w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 ${
+                  plan.isPopular 
+                    ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/30' 
+                    : 'bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white'
+                }`}
+              >
                 Select Plan <ArrowRight size={18} />
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -84,9 +88,9 @@ export const Pricing = () => {
               <h3 className="text-2xl font-bold">Need a Custom Configuration?</h3>
               <p className="text-blue-100">Contact our enterprise team for a tailor-made solution for your business.</p>
            </div>
-           <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-colors">
+           <Link to="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-colors">
               Talk to Sales
-           </button>
+           </Link>
         </div>
       </div>
     </div>
