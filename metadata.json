@@ -1,6 +1,6 @@
 {
-  "name": "USA Cloud IT - Professional Hosting & IT Solutions",
-  "description": "A high-performance, modern React-based website for USA Cloud IT, featuring hosting services, cloud solutions, and IT consultancy with a clean professional UI.",
+  "name": "USA Cloud IT - Enterprise",
+  "description": "Premium React-based IT solution built for universal compatibility across all static and dynamic hosting environments.",
   "requestFramePermissions": [
     "camera",
     "microphone"
