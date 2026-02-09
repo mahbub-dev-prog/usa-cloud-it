@@ -1,0 +1,8 @@
+{
+  "name": "USA Cloud IT - Professional Hosting & IT Solutions",
+  "description": "A high-performance, modern React-based website for USA Cloud IT, featuring hosting services, cloud solutions, and IT consultancy with a clean professional UI.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
