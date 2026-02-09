@@ -31,7 +31,7 @@ export const Contact = () => {
                   <div className="bg-green-100 dark:bg-green-900/30 p-3 rounded-xl text-green-600"><MessageCircle size={24} /></div>
                   <div>
                     <p className="text-xs font-bold text-slate-500 uppercase">WhatsApp</p>
-                    <a href="https://wa.me/17162003096" className="text-lg font-bold text-slate-900 dark:text-white hover:text-green-600 transition-colors">+1 716 200 3096</a>
+                    <a href="https://wa.me/8801711427975" className="text-lg font-bold text-slate-900 dark:text-white hover:text-green-600 transition-colors">+880 1711-427975</a>
                   </div>
                </div>
 
@@ -39,7 +39,7 @@ export const Contact = () => {
                   <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-xl text-blue-500"><Send size={24} /></div>
                   <div>
                     <p className="text-xs font-bold text-slate-500 uppercase">Telegram</p>
-                    <a href="https://t.me/usacloudit" className="text-lg font-bold text-slate-900 dark:text-white hover:text-blue-500 transition-colors">@usacloudit</a>
+                    <a href="https://t.me/usacloudit" className="text-lg font-bold text-slate-900 dark:text-white hover:text-blue-600 transition-colors">@usacloudit</a>
                   </div>
                </div>
 

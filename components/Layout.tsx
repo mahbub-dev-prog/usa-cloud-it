@@ -178,7 +178,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-blue-500" />
-                <a href="tel:+17162003096" className="hover:text-white">+1 716 200 3096</a>
+                <a href="tel:+8801711427975" className="hover:text-white">+880 1711-427975</a>
               </li>
               <li className="flex items-center gap-3">
                 <Send size={16} className="text-blue-500" />
@@ -186,7 +186,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle size={16} className="text-blue-500" />
-                <a href="https://wa.me/17162003096" target="_blank" className="hover:text-white">WhatsApp Chat</a>
+                <a href="https://wa.me/8801711427975" target="_blank" className="hover:text-white">WhatsApp Chat</a>
               </li>
             </ul>
           </div>

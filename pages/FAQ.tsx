@@ -69,7 +69,7 @@ export const FAQ = () => {
            <p className="text-slate-600 dark:text-slate-400 mb-8">We're here to help you 24/7. Reach out through any of our support channels.</p>
            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a href="mailto:usacloudit@gmail.com" className="bg-blue-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-700 transition-all">Email Support</a>
-              <a href="https://wa.me/17162003096" className="bg-white dark:bg-slate-800 text-blue-600 dark:text-white font-bold px-8 py-4 rounded-xl border border-blue-200 dark:border-slate-700 hover:bg-slate-50 transition-all">Live Chat</a>
+              <a href="https://wa.me/8801711427975" className="bg-white dark:bg-slate-800 text-blue-600 dark:text-white font-bold px-8 py-4 rounded-xl border border-blue-200 dark:border-slate-700 hover:bg-slate-50 transition-all">Live Chat</a>
            </div>
         </div>
       </div>
